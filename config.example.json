@@ -1,0 +1,153 @@
+{
+  "brand_name": "ughh_ai",
+  "tagline": "AI hype, meet reality",
+  "platforms": {
+    "instagram": {
+      "enabled": true,
+      "handle": "@ughh_ai",
+      "manual_posting": true
+    }
+  },
+  "posting_schedule": {
+    "instagram": {
+      "times": ["10:00", "14:00", "18:00"],
+      "timezone": "UTC",
+      "post_count_daily": 3
+    }
+  },
+  "content_pillars": [
+    "AI hype vs reality",
+    "Coding culture",
+    "Tech layoffs",
+    "Startup culture",
+    "CEO contradictions",
+    "AI's environmental impact",
+    "Work-life balance in tech"
+  ],
+  "image_settings": {
+    "width": 1080,
+    "height": 1080,
+    "font_size": 68,
+    "line_spacing": 40,
+    "padding": 120,
+    "max_chars_per_line": 35,
+    "fonts": {
+      "default": {
+        "name": "Inter",
+        "paths": [
+          "/System/Library/Fonts/SFNSDisplay.ttf",
+          "/System/Library/Fonts/HelveticaNeue.ttc",
+          "Arial.ttf"
+        ],
+        "size": 64,
+        "weight": "Regular",
+        "use_case": "Multi-line jokes, dry irony, observational AI humor"
+      },
+      "authority": {
+        "name": "Helvetica",
+        "paths": [
+          "/System/Library/Fonts/HelveticaNeue.ttc",
+          "/System/Library/Fonts/Helvetica.ttc"
+        ],
+        "size": 66,
+        "weight": "Bold",
+        "use_case": "Corporate speak, CEO mockery, authority figures"
+      },
+      "tech": {
+        "name": "IBM Plex Sans",
+        "paths": [
+          "/System/Library/Fonts/SFMono.ttf",
+          "/System/Library/Fonts/Menlo.ttc"
+        ],
+        "size": 62,
+        "weight": "Regular",
+        "use_case": "Dev culture, tech stack jokes"
+      },
+      "academic": {
+        "name": "Times New Roman",
+        "paths": [
+          "/Library/Fonts/Times New Roman.ttf",
+          "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+        ],
+        "size": 58,
+        "weight": "Regular",
+        "use_case": "Ironic academic, research paper mockery"
+      },
+      "error": {
+        "name": "JetBrains Mono",
+        "paths": [
+          "/System/Library/Fonts/SFMono.ttf",
+          "/System/Library/Fonts/Menlo.ttc",
+          "/System/Library/Fonts/Monaco.ttf"
+        ],
+        "size": 52,
+        "weight": "Regular",
+        "use_case": "Fake errors, logs, system outputs, code"
+      },
+      "impact": {
+        "name": "Impact",
+        "paths": [
+          "/System/Library/Fonts/Supplemental/Impact.ttf",
+          "/Library/Fonts/Impact.ttf"
+        ],
+        "size": 76,
+        "weight": "Bold",
+        "use_case": "One-liners, scroll-stopping punchlines (max 1 per 5-6 posts)"
+      }
+    },
+    "backgrounds": {
+      "white": {
+        "color": "#FFFFFF",
+        "frequency": 80,
+        "use_case": "Default for most posts"
+      },
+      "off_white": {
+        "color": "#FAFAFA",
+        "frequency": 15,
+        "use_case": "Slightly longer jokes, carousel slides"
+      },
+      "light_gray": {
+        "color": "#EFEFEF",
+        "frequency": 5,
+        "use_case": "Tech/log jokes, system outputs"
+      }
+    },
+    "text_color": "#000000",
+    "alignment_rules": {
+      "center": "One-liners only (≤1 line)",
+      "left": "Default for multi-line content"
+    },
+    "watermark": {
+      "type": "logo",
+      "logo_path": "brands/ughh_ai/logo/Ughh.AI IG Logo.jpg",
+      "width": 200,
+      "margin_bottom": 35,
+      "text": "@ughh.ai",
+      "font_size": 28,
+      "font_family": "Inter",
+      "color": "#000000",
+      "position": "bottom_center"
+    }
+  },
+  "gemini_model": "gemini-2.0-flash-exp",
+  "quality_threshold": 9,
+  "platforms": ["instagram", "twitter"],
+  "telegram": {
+    "enabled": true,
+    "send_after_generation": true,
+    "include_captions": true,
+    "send_rank_threshold": 9,
+    "message_template": "New meme ready! 🎨\nRank: {ranking}/10\nExpected reach: {reach}\n\nCaption:\n{caption}"
+  },
+  "content_distribution": {
+    "default_font_frequency": 75,
+    "special_fonts_frequency": 20,
+    "impact_frequency": 5,
+    "impact_max_per_batch": 1
+  },
+  "cost_tracking": {
+    "monthly_budget_usd": 3.0,
+    "gemini_pro_input_cost_per_1m": 1.25,
+    "gemini_pro_output_cost_per_1m": 5.0
+  }
+}
